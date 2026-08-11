@@ -118,47 +118,62 @@ document.querySelectorAll(".card, .project-card, .stat, .timeline__item").forEac
   observer.observe(el);
 });
 
-// Scrollspy: highlight nav links when corresponding section is in view
+// Scrollspy: highlight nav links based on the section closest to the top of the viewport
 const sections = document.querySelectorAll('section[id]');
 const navLinkSelector = '.nav__links a';
 const navLinksAll = document.querySelectorAll(navLinkSelector);
 const navLinksContainer = document.querySelector('.nav__links');
+const headerOffset = 120;
 
 function updateSliderPosition() {
   const activeLink = document.querySelector(`${navLinkSelector}.active`);
   if (activeLink && navLinksContainer) {
     const linkRect = activeLink.getBoundingClientRect();
     const containerRect = navLinksContainer.getBoundingClientRect();
-    
+
     const left = linkRect.left - containerRect.left;
     const width = linkRect.width;
-    
+
     navLinksContainer.style.setProperty('--slider-left', `${left}px`);
     navLinksContainer.style.setProperty('--slider-width', `${width}px`);
   }
 }
 
-const sectionObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      const id = entry.target.getAttribute('id');
-      const link = document.querySelector(`${navLinkSelector}[href="#${id}"]`);
-      if (link) {
-        if (entry.isIntersecting) {
-          navLinksAll.forEach((l) => l.classList.remove('active'));
-          link.classList.add('active');
-          updateSliderPosition();
-        }
-      }
-    });
-  },
-  { root: null, threshold: 0.25 }
-);
+function setActiveNavLink() {
+  let currentSection = sections[0];
+  let closestDistance = Number.POSITIVE_INFINITY;
 
-sections.forEach((sec) => sectionObserver.observe(sec));
+  sections.forEach((section) => {
+    const rect = section.getBoundingClientRect();
+    const distance = Math.abs(rect.top - headerOffset);
 
-// Update slider on window resize
-window.addEventListener('resize', updateSliderPosition);
+    if (rect.top <= headerOffset + 80 && rect.bottom >= headerOffset + 80) {
+      currentSection = section;
+      closestDistance = distance;
+      return;
+    }
 
-// Initial position on load
-setTimeout(updateSliderPosition, 100);
+    if (distance < closestDistance) {
+      closestDistance = distance;
+      currentSection = section;
+    }
+  });
+
+  const id = currentSection?.getAttribute('id');
+  const link = document.querySelector(`${navLinkSelector}[href="#${id}"]`);
+
+  if (link) {
+    navLinksAll.forEach((l) => l.classList.remove('active'));
+    link.classList.add('active');
+    updateSliderPosition();
+  }
+}
+
+window.addEventListener('scroll', setActiveNavLink, { passive: true });
+window.addEventListener('resize', () => {
+  updateSliderPosition();
+  setActiveNavLink();
+});
+
+window.addEventListener('load', setActiveNavLink);
+setTimeout(setActiveNavLink, 100);

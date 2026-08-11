@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -21,15 +21,15 @@
     <meta name="twitter:description" content="I turn messy data into decision-ready intelligence." />
     <meta name="twitter:image" content="https://aditya0241.github.io/assets/img/og-image.png" />
     
-    <title>Aditya Reddy Satti — Data Analyst & AI Engineer</title>
+    <title>Aditya Reddy Satti — Data Engineer & AI Engineer</title>
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-    <link rel="canonical" href="https://aditya0241.github.io/" />
+    <link rel="canonical" href="https://aditya-reddy-satti.github.io/" />
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" as="style" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" as="style" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link
@@ -39,1055 +39,8 @@
       referrerpolicy="no-referrer"
       fetchpriority="low"
     />
-    <style>
-      :root {
-        --bg: #05060a;
-        --bg-rgb: 5, 6, 10;
-        --bg-alt: #0f1017;
-        --card: #12131c;
-        --card-alt: #191a26;
-        --text: #f5f5f6;
-        --text-muted: #b4b5bf;
-        --accent: #7f5af0;
-        --accent-2: #12f0a1;
-        --border: rgba(255, 255, 255, 0.08);
-        --gradient: radial-gradient(circle at top, rgba(127, 90, 240, 0.35), transparent 60%),
-          radial-gradient(circle at 20% 20%, rgba(18, 240, 161, 0.3), transparent 30%),
-          linear-gradient(120deg, #05060a, #0a0b13 70%);
-        color-scheme: dark;
-      }
-      :root[data-theme="light"] {
-        --bg: #f8f9fa;
-        --bg-rgb: 248, 249, 250;
-        --bg-alt: #eef0f5;
-        --card: #ffffff;
-        --card-alt: #f3f4f8;
-        --text: #1a1a2e;
-        --text-muted: #666666;
-        --accent: #7f5af0;
-        --accent-2: #12f0a1;
-        --border: rgba(0, 0, 0, 0.1);
-        --gradient: radial-gradient(circle at top, rgba(127, 90, 240, 0.15), transparent 60%),
-          radial-gradient(circle at 20% 20%, rgba(18, 240, 161, 0.1), transparent 30%),
-          linear-gradient(120deg, #f8f9fa, #eef0f5 70%);
-        color-scheme: light;
-      }
-      html {
-        transition: background-color 0.3s ease, color 0.3s ease;
-      }
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-        font-family: "Inter", system-ui, -apple-system, sans-serif;
-        background: var(--bg);
-        color: var(--text);
-        line-height: 1.6;
-        scroll-behavior: smooth;
-      }
-      h1,
-      h2,
-      h3,
-      h4 {
-        font-family: "Space Grotesk", "Inter", sans-serif;
-        margin: 0;
-      }
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-      img {
-        max-width: 100%;
-        border-radius: 16px;
-      }
-      /* Button and Link Transitions */
-      .btn,
-      a {
-        transition: all 0.3s ease;
-      }
-      .btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 20px rgba(127, 90, 240, 0.3);
-      }
-      .btn--primary:hover {
-        background: #6f4fd9;
-      }
-      .btn--ghost:hover {
-        border-color: var(--accent);
-        background: rgba(127, 90, 240, 0.1);
-      }
-      .card:hover {
-        border-color: var(--accent-2);
-        transform: translateY(-4px);
-        box-shadow: 0 20px 40px rgba(18, 240, 161, 0.1);
-      }
-      .project-card:hover {
-        border-color: var(--accent);
-        transform: translateY(-6px);
-        box-shadow: 0 20px 50px rgba(127, 90, 240, 0.15);
-      }
-      .chip:hover {
-        border-color: var(--accent);
-        color: var(--accent);
-        background: rgba(127, 90, 240, 0.1);
-      }
-      .highlight-card:hover {
-        border-color: var(--accent-2);
-      }
-      nav a:hover {
-        color: var(--accent);
-      }
-      /* Back to Top Button */
-      .back-to-top {
-        position: fixed;
-        bottom: 2rem;
-        right: 2rem;
-        width: 50px;
-        height: 50px;
-        background: var(--accent);
-        border: none;
-        border-radius: 50%;
-        cursor: pointer;
-        display: none;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 1.2rem;
-        z-index: 99;
-        box-shadow: 0 8px 20px rgba(127, 90, 240, 0.4);
-      }
-      .back-to-top:hover {
-        background: #6f4fd9;
-        transform: scale(1.1);
-      }
-      .back-to-top.show {
-        display: flex;
-      }
-      /* Mobile Menu */
-      .nav__mobile-toggle {
-        display: none;
-        background: none;
-        border: none;
-        color: var(--text);
-        font-size: 1.5rem;
-        cursor: pointer;
-        z-index: 11;
-      }
-      .nav__links.mobile-open {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
-        background: rgba(var(--bg-rgb), 0.98);
-        backdrop-filter: blur(12px);
-        padding: 1.5rem;
-        border-bottom: 1px solid var(--border);
-        gap: 1rem;
-      }
-      /* Scroll Animations */
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(30px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      .section {
-        animation: fadeInUp 0.6s ease-out forwards;
-        opacity: 0;
-      }
-      .section:nth-child(1) {
-        animation-delay: 0s;
-      }
-      .section:nth-child(2) {
-        animation-delay: 0.1s;
-      }
-      .section:nth-child(3) {
-        animation-delay: 0.2s;
-      }
-      .section:nth-child(4) {
-        animation-delay: 0.3s;
-      }
-      .section:nth-child(5) {
-        animation-delay: 0.4s;
-      }
-      header {
-        width: 100%;
-        position: sticky;
-        top: 0;
-        z-index: 10;
-        backdrop-filter: blur(12px);
-        background-color: rgba(var(--bg-rgb), 0.85);
-        border-bottom: 1px solid var(--border);
-      }
-      .nav {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 1.5rem 2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 3rem;
-      }
-      .nav__brand {
-        font-weight: 700;
-        letter-spacing: 0.05em;
-        font-size: 1rem;
-        flex-shrink: 0;
-        position: absolute;
-        left: 2rem;
-      }
-      .nav__links {
-        display: flex;
-        gap: 2.5rem;
-        font-size: 0.95rem;
-        position: relative;
-        justify-content: center;
-        --slider-left: 0px;
-        --slider-width: 0px;
-        flex: 1;
-      }
-      .nav__links a {
-        position: relative;
-        padding: 0.4rem 0;
-        color: var(--text);
-        transition: color 0.25s ease;
-        z-index: 1;
-        font-weight: 500;
-        letter-spacing: 0.02em;
-      }
-      .nav__links::after {
-        content: "";
-        position: absolute;
-        bottom: -8px;
-        height: 2px;
-        background: var(--accent);
-        border-radius: 2px;
-        transition: left 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), width 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
-        left: var(--slider-left);
-        width: var(--slider-width);
-      }
-      .nav__links a:hover {
-        color: var(--accent);
-      }
-      .nav__links a.active {
-        color: var(--accent);
-      }
-      .nav__controls {
-        display: flex;
-        gap: 1.5rem;
-        align-items: center;
-        flex-shrink: 0;
-        position: absolute;
-        right: 2rem;
-      }
-      .nav__cta {
-        padding: 0.55rem 1.1rem;
-        border-radius: 999px;
-        border: 1px solid var(--accent);
-        color: var(--accent);
-        font-size: 0.9rem;
-      }
-      /* Theme Toggle Button */
-      .theme-toggle {
-        background: none;
-        border: 1px solid var(--border);
-        color: var(--text-muted);
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.3s ease;
-        font-size: 1rem;
-      }
-      .theme-toggle:hover {
-        color: var(--accent);
-        border-color: var(--accent);
-      }
-      body {
-        transition: background-color 0.3s ease, color 0.3s ease;
-      }
-      .hero {
-        min-height: 95vh;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        align-items: center;
-        gap: 3.5rem;
-        position: relative;
-      }
-      .hero--centered {
-        grid-template-columns: 1fr;
-        justify-items: center;
-        text-align: center;
-      }
-      .hero__content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 700px;
-      }
-      .hero__profile {
-        margin-bottom: 2rem;
-      }
-      .hero__profile-img {
-        width: 220px;
-        height: 220px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 4px solid var(--accent);
-      }
-      .hero__title--centered {
-        text-align: center;
-        color: var(--accent);
-        margin-bottom: 0.5rem;
-      }
-      .hero__subtitle {
-        font-size: 1.3rem;
-        color: var(--text-muted);
-        margin-bottom: 1.5rem;
-        font-weight: 500;
-      }
-      .hero__summary--centered {
-        text-align: center;
-        font-size: 1.05rem;
-        line-height: 1.8;
-      }
-      .section {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 6rem 2rem;
-      }
-      .hero::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: var(--gradient);
-        opacity: 0.6;
-        z-index: -1;
-      }
-      .hero__eyebrow {
-        text-transform: uppercase;
-        letter-spacing: 0.3em;
-        font-size: 0.8rem;
-        color: var(--text-muted);
-      }
-      .hero__title {
-        font-size: clamp(2.8rem, 4vw, 4rem);
-        line-height: 1.1;
-        margin: 1rem 0;
-      }
-      .hero__title span {
-        color: var(--accent);
-      }
-      .hero__summary {
-        max-width: 540px;
-        color: var(--text-muted);
-      }
-      .hero__actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        margin: 2rem 0;
-      }
-      .btn {
-        border-radius: 999px;
-        padding: 0.9rem 1.6rem;
-        font-weight: 600;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.6rem;
-        border: 1px solid transparent;
-      }
-      .btn--primary {
-        background: var(--accent);
-        color: #fff;
-      }
-      .btn--ghost {
-        border-color: rgba(255, 255, 255, 0.3);
-        color: var(--text);
-      }
-      .hero__cards {
-        display: grid;
-        gap: 1rem;
-      }
-      .highlight-card {
-        background: var(--card);
-        border-radius: 20px;
-        padding: 1.75rem;
-        border: 1px solid var(--border);
-        box-shadow: 0 10px 60px rgba(0, 0, 0, 0.4);
-      }
-      .highlight-card--accent {
-        background: linear-gradient(135deg, rgba(127, 90, 240, 0.15), rgba(18, 240, 161, 0.05));
-      }
-      .highlight-card h3 {
-        font-size: 1rem;
-        color: var(--text-muted);
-        margin-bottom: 0.5rem;
-      }
-      .highlight-card p {
-        font-size: 1.2rem;
-        margin: 0;
-      }
-      .stats {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        gap: 1rem;
-        margin-top: 3rem;
-      }
-      .stat {
-        padding: 1.5rem;
-        border-radius: 18px;
-        border: 1px solid var(--border);
-        background: var(--card-alt);
-      }
-      .stat h2 {
-        font-size: 2rem;
-        color: var(--accent);
-      }
-      .grid {
-        display: grid;
-        gap: 1.5rem;
-      }
-      .grid--two {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      }
-      .card {
-        background: var(--card);
-        border-radius: 24px;
-        padding: 2rem;
-        border: 1px solid var(--border);
-      }
-      .section__title {
-        font-size: 2.5rem;
-        margin-bottom: 1.5rem;
-      }
-      /* Center heading for Professional Experience, Projects, and Education */
-      #experience .section__title,
-      #projects .section__title,
-      #education .section__title {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .section__intro {
-        max-width: 640px;
-        color: var(--text-muted);
-        margin-bottom: 3rem;
-      }
-      .details-list {
-        list-style: none;
-        padding: 0;
-        margin: 2rem 0 0;
-        display: grid;
-        gap: 0.75rem;
-      }
-      .details-list li {
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
-        padding-bottom: 0.5rem;
-      }
-      .about-intro {
-        display: grid;
-        grid-template-columns: 1fr 300px;
-        align-items: center;
-        gap: 3rem;
-        margin-bottom: 3rem;
-      }
-      .about-content {
-        display: grid;
-        grid-template-columns: 1.3fr 1.7fr;
-        gap: 3.5rem;
-        align-items: start;
-      }
-      .about-text {
-        color: var(--text-muted);
-        line-height: 1.8;
-        font-size: 0.9rem;
-        max-width: 100%;
-      }
-      .about-text p {
-        margin-bottom: 1.5rem;
-      }
-      .certifications-title {
-        font-size: 1rem;
-        color: var(--text);
-        margin-top: 2rem;
-        margin-bottom: 0;
-        display: none;
-        font-weight: 700;
-      }
-      .skills-categories {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2.5rem 2.5rem;
-      }
-      .skill-category {
-        display: flex;
-        flex-direction: column;
-        gap: 0.8rem;
-      }
-      .skill-category h3 {
-        font-size: 0.9rem;
-        font-weight: 700;
-        color: var(--text);
-        margin: 0;
-        letter-spacing: 0.5px;
-      }
-      .skill-items {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.7rem;
-      }
-      .skill-chip {
-        display: inline-block;
-        padding: 0.4rem 0.85rem;
-        background: transparent;
-        border: 1px solid var(--border);
-        border-radius: 16px;
-        font-size: 0.8rem;
-        color: var(--text-muted);
-        white-space: nowrap;
-        transition: all 0.2s ease;
-      }
-      .skill-chip:hover {
-        border-color: var(--accent);
-        color: var(--accent);
-        background: rgba(127, 90, 240, 0.05);
-      }
-      @media (max-width: 1200px) {
-        .about-content {
-          grid-template-columns: 0.7fr 2.3fr;
-          gap: 3.5rem;
-        }
-        .skills-categories {
-          grid-template-columns: repeat(3, 1fr);
-        }
-      }
-      @media (max-width: 1024px) {
-        .about-content {
-          grid-template-columns: 1fr;
-        }
-        .skills-categories {
-          grid-template-columns: repeat(3, 1fr);
-        }
-      }
-      @media (max-width: 768px) {
-        .about-content {
-          grid-template-columns: 1fr;
-        }
-        .skills-categories {
-          grid-template-columns: repeat(2, 1fr);
-        }
-      }
-      .about-intro__image {
-        width: 100%;
-        max-width: 300px;
-        border-radius: 20px;
-        overflow: hidden;
-        border: 2px solid var(--accent);
-        box-shadow: 0 20px 60px rgba(127, 90, 240, 0.2);
-      }
-      .about-intro__image img {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-      @media (max-width: 768px) {
-        .about-intro {
-          grid-template-columns: 1fr;
-        }
-        .about-intro__image {
-          max-width: 250px;
-          margin: 0 auto;
-        }
-      }
-      .timeline {
-        display: grid;
-        gap: 1.25rem;
-      }
-      .timeline__item {
-        padding: 1.5rem;
-        border-radius: 18px;
-        border: 1px solid var(--border);
-        background: var(--card-alt);
-      }
-      .timeline__meta {
-        font-size: 0.85rem;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        color: var(--text-muted);
-        margin-bottom: 0.8rem;
-      }
-      /* Vertical timeline layout used on Professional Experience */
-      .timeline-vertical {
-        max-width: 980px;
-        margin: 0 auto;
-        display: grid;
-        gap: 2rem;
-        padding: 0 1rem;
-      }
-      .timeline-row {
-        display: grid;
-        grid-template-columns: 72px 1fr;
-        gap: 1.25rem;
-        align-items: start;
-      }
-      .timeline-row .marker {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: start;
-        padding-top: 6px;
-      }
-      .timeline-row .marker::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 3px;
-        background: linear-gradient(180deg, rgba(127, 90, 240, 0.12), rgba(18, 240, 161, 0.04));
-        left: 50%;
-        transform: translateX(-50%);
-        border-radius: 3px;
-      }
-      .timeline-row .dot {
-        position: relative;
-        top: 12px;
-        width: 18px;
-        height: 18px;
-        border-radius: 50%;
-        background: var(--bg);
-        border: 4px solid var(--accent);
-        z-index: 2;
-        box-shadow: 0 8px 20px rgba(127, 90, 240, 0.14);
-        transition: transform 0.18s ease, box-shadow 0.18s ease;
-      }
-      .timeline-row .dot:hover {
-        transform: scale(1.05);
-        box-shadow: 0 12px 30px rgba(127, 90, 240, 0.18);
-      }
-      .timeline-row .card {
-        transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
-      }
-      .timeline-row .card:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 24px 50px rgba(0, 0, 0, 0.48);
-        border-color: rgba(127, 90, 240, 0.10);
-      }
-      .timeline__item h3 {
-        margin: 0 0 6px 0;
-        font-size: 1.05rem;
-        color: var(--text);
-      }
-      .muted-link {
-        display: block;
-        color: var(--text-muted);
-        font-size: 0.9rem;
-        margin-bottom: 6px;
-      }
-      @media (max-width: 820px) {
-        .timeline-row {
-          grid-template-columns: 48px 1fr;
-        }
-        .timeline-row .dot {
-          top: 10px;
-          width: 14px;
-          height: 14px;
-          border-width: 3px;
-        }
-      }
-      .chips {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.75rem;
-        margin-top: 1.5rem;
-      }
+    <link rel="stylesheet" href="main.css" />
 
-      .chip {
-        border: 1px solid var(--border);
-        border-radius: 999px;
-        padding: 0.55rem 1rem;
-        font-size: 0.9rem;
-        color: var(--text-muted);
-      }
-      /* Education cards – layout matching reference (degree, institution, coursework | dates) */
-      .education-cards {
-        display: grid;
-        gap: 1.25rem;
-        max-width: 900px;
-        margin: 0 auto;
-      }
-      .education-card {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        gap: 1.5rem 2rem;
-        align-items: start;
-        background: var(--card);
-        border-radius: 20px;
-        padding: 2rem;
-        border: 1px solid var(--border);
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-      }
-      .education-card__main {
-        min-width: 0;
-      }
-      .education-card__degree {
-        color: var(--accent);
-        font-size: 1.2rem;
-        font-weight: 700;
-        margin: 0 0 0.35rem 0;
-      }
-      .education-card__meta {
-        color: var(--text-muted);
-        font-size: 0.95rem;
-        margin-bottom: 0.75rem;
-      }
-      .education-card__coursework-label {
-        color: var(--accent);
-        font-weight: 700;
-        font-size: 0.9rem;
-        margin: 0 0 0.25rem 0;
-      }
-      .education-card__coursework {
-        color: var(--text-muted);
-        font-size: 0.9rem;
-        line-height: 1.5;
-      }
-      .education-card__dates {
-        text-align: right;
-        color: var(--text-muted);
-        font-size: 0.9rem;
-        white-space: nowrap;
-      }
-      .education-card__dates .gpa {
-        display: block;
-        margin-top: 0.25rem;
-      }
-      @media (max-width: 640px) {
-        .education-card {
-          grid-template-columns: 1fr;
-        }
-        .education-card__dates {
-          text-align: left;
-        }
-      }
-      .project-card {
-        background: var(--card);
-        border-radius: 24px;
-        border: 1px solid var(--border);
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-      }
-      .project-card__body {
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-      }
-      .project-card__desc {
-        color: var(--text-muted);
-        font-size: 0.95rem;
-        line-height: 1.6;
-        margin: 0;
-      }
-      .project-card__tools-label {
-        font-size: 0.75rem;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        color: var(--text-muted);
-        margin-bottom: 0.35rem;
-      }
-      .project-card__tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-      }
-      .project-card__tags span {
-        font-size: 0.75rem;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color: var(--accent);
-        font-weight: bolder;
-      }
-      .project-card__links {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 0.75rem;
-        align-items: center;
-      }
-      .project-card__links .btn {
-        flex-shrink: 0;
-        white-space: nowrap;
-      }
-      @media (max-width: 640px) {
-        .project-card__links {
-          flex-direction: column;
-          align-items: stretch;
-          gap: 0.75rem;
-        }
-        .project-card__links .btn {
-          width: 100%;
-          justify-content: center;
-        }
-      }
-      .contact-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 2rem;
-        margin-top: 2rem;
-      }
-      .contact-card {
-        padding: 1.5rem;
-        background: var(--card);
-        border-radius: 18px;
-        border: 1px solid var(--border);
-      }
-      .contact-card.social {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        padding: 1.5rem;
-      }
-      .contact-card.social a {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        border: 2px solid var(--accent);
-        color: var(--accent);
-        font-size: 1.5rem;
-        transition: all 0.3s ease;
-      }
-      .contact-card.social a:hover {
-        background: var(--accent);
-        color: #fff;
-        transform: translateY(-4px);
-      }
-      footer {
-        text-align: center;
-        padding: 3rem 1rem;
-        color: var(--text-muted);
-        border-top: 1px solid var(--border);
-        background: #05060a;
-      }
-      @media (max-width: 820px) {
-        .nav__links {
-          display: none;
-        }
-        .nav__mobile-toggle {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 0.5rem;
-          min-width: 44px;
-          min-height: 44px;
-        }
-        .nav {
-          padding: 1rem 1.25rem;
-          padding-left: max(1.25rem, env(safe-area-inset-left));
-          padding-right: max(1.25rem, env(safe-area-inset-right));
-        }
-        .nav__brand {
-          left: max(1.25rem, env(safe-area-inset-left));
-          max-width: calc(100vw - 120px);
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          font-size: 0.9rem;
-        }
-        .nav__controls {
-          right: max(1.25rem, env(safe-area-inset-right));
-        }
-        .section {
-          padding: 4rem 1.25rem;
-        }
-        .nav__links.mobile-open {
-          left: 0;
-          right: 0;
-          padding-left: max(1.5rem, env(safe-area-inset-left));
-          padding-right: max(1.5rem, env(safe-area-inset-right));
-        }
-      }
-      @media (max-width: 640px) {
-        html {
-          -webkit-text-size-adjust: 100%;
-        }
-        body {
-          overflow-x: hidden;
-        }
-        main, .section__intro, .contact-card, .project-card__desc, .about-text {
-          overflow-wrap: break-word;
-          word-wrap: break-word;
-        }
-        .section {
-          padding: 3rem 1rem;
-          padding-left: max(1rem, env(safe-area-inset-left));
-          padding-right: max(1rem, env(safe-area-inset-right));
-        }
-        .hero {
-          min-height: 85vh;
-          padding: 2rem 1rem;
-        }
-        .hero__profile-img {
-          width: 180px;
-          height: 180px;
-        }
-        .hero__subtitle {
-          font-size: 1.1rem;
-        }
-        .hero__summary--centered {
-          font-size: 0.95rem;
-        }
-        .section__title {
-          font-size: 1.75rem;
-        }
-        .section__intro {
-          text-align: center;
-          margin-left: auto;
-          margin-right: auto;
-          padding: 0 0.5rem;
-        }
-        .project-card__body {
-          padding: 1.5rem 1.25rem;
-        }
-        .hero__actions {
-          flex-direction: column;
-          width: 100%;
-          max-width: 280px;
-        }
-        .hero__actions .btn {
-          width: 100%;
-          justify-content: center;
-        }
-        .details-list li {
-          flex-direction: column;
-          gap: 0.2rem;
-        }
-        .stats {
-          grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-          gap: 0.75rem;
-        }
-        .stat {
-          padding: 1.25rem;
-        }
-        .stat h2 {
-          font-size: 1.5rem;
-        }
-        .back-to-top {
-          bottom: max(1rem, env(safe-area-inset-bottom));
-          right: max(1rem, env(safe-area-inset-right));
-          width: 48px;
-          height: 48px;
-          font-size: 1rem;
-        }
-        .theme-toggle {
-          min-width: 44px;
-          min-height: 44px;
-        }
-        .contact-grid {
-          grid-template-columns: 1fr;
-          gap: 1.25rem;
-        }
-        .card,
-        .highlight-card {
-          padding: 1.25rem;
-        }
-        .timeline-vertical {
-          padding: 0 0.5rem;
-        }
-        .timeline__item {
-          padding: 1.25rem;
-        }
-        .education-cards {
-          gap: 1rem;
-        }
-        .education-card {
-          padding: 1.5rem;
-        }
-        .grid--two {
-          gap: 1.25rem;
-        }
-      }
-      @media (max-width: 480px) {
-        .section {
-          padding: 2.5rem 0.75rem;
-          padding-left: max(0.75rem, env(safe-area-inset-left));
-          padding-right: max(0.75rem, env(safe-area-inset-right));
-        }
-        .section__title {
-          font-size: 1.5rem;
-          padding: 0 0.5rem;
-        }
-        .hero__title {
-          font-size: clamp(1.75rem, 8vw, 2.2rem);
-        }
-        .hero__profile-img {
-          width: 160px;
-          height: 160px;
-        }
-        .hero__subtitle {
-          font-size: 1rem;
-        }
-        .hero__summary--centered {
-          font-size: 0.9rem;
-        }
-        .skills-categories {
-          grid-template-columns: 1fr;
-          gap: 1.5rem;
-        }
-        .nav__brand {
-          font-size: 0.85rem;
-          max-width: calc(100vw - 100px);
-        }
-        .btn {
-          padding: 0.85rem 1.25rem;
-          font-size: 0.9rem;
-        }
-        .contact-card {
-          padding: 1.25rem;
-        }
-        .contact-card a {
-          word-break: break-word;
-        }
-        .theme-toggle {
-          min-width: 44px;
-          min-height: 44px;
-        }
-        .project-card__tags {
-          gap: 0.4rem;
-        }
-        .project-card__tags span {
-          font-size: 0.7rem;
-        }
-      }
-      @media (max-width: 380px) {
-        .hero__profile-img {
-          width: 140px;
-          height: 140px;
-        }
-        .section__title {
-          font-size: 1.35rem;
-        }
-      }
-    </style>
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
@@ -1095,13 +48,13 @@
       "@context": "https://schema.org/",
       "@type": "Person",
       "name": "Aditya Reddy Satti",
-      "url": "https://aditya0241.github.io/",
+      "url": "https://aditya-reddy-satti.github.io/",
       "description": "Data Scientist and Analytics Strategist with 4+ years of experience",
       "jobTitle": "Data Scientist",
-      "email": "adityareddy1977@gmail.com",
+      "email": "reddyaditya159@gmail.com",
       "sameAs": [
         "https://www.linkedin.com/in/aditya-reddy-satti-3a191a28a/",
-        "https://github.com/Aditya0241"
+        "https://github.com/Aditya-Reddy-Satti"
       ],
       "knowsAbout": [
         "Machine Learning",
@@ -1118,29 +71,15 @@
   </head>
   <body>
     <!-- Skip to main content link for accessibility -->
-    <a href="#main" class="skip-to-main" style="
-      position: absolute;
-      top: -40px;
-      left: 0;
-      background: var(--accent);
-      color: white;
-      padding: 8px 16px;
-      text-decoration: none;
-      border-radius: 0 0 4px 0;
-      z-index: 100;
-    ">
+    <a href="#main" class="skip-to-main">
       Skip to main content
     </a>
     
-    <style>
-      .skip-to-main:focus {
-        top: 0;
-      }
-    </style>
+
 
     <header role="banner">
       <nav class="nav" role="navigation" aria-label="Main navigation">
-        <a class="nav__brand" href="#home">Aditya Reddy Satti</a>
+        <a class="nav__brand" href="#home">AR</a>
         <button class="nav__mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -1168,8 +107,8 @@
           <h1 class="hero__title hero__title--centered">
             Aditya Reddy Satti
           </h1>
-          <p class="hero__subtitle">Data Analyst & AI Engineer</p>
-          <p class="hero__summary--centered">Building analytics and AI solutions that help businesses turn raw data into actionable insights and better decisions. Specializing in business analytics, decision support, and practical AI for real-world impact.</p>
+          <p class="hero__subtitle">Data Engineer & AI Engineer</p>
+          <p class="hero__summary--centered">Building prodution AI applications, sclable data pipelines and analytics platforms that turn enterprise data into decision-ready insights. Specializing in RAG architectures with Azure OpenAI, PySpark lakehouse systems, Medallion data modeling and self-serve BI.</p>
           <div class="hero__actions">
             <a class="btn btn--primary" href="#projects" aria-label="View featured work section">
               View featured work <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
@@ -1183,78 +122,106 @@
       </section>
 
       <section class="section" id="about">
-        <h2 class="section__title">About Me</h2>
+        <h2 class="section__title centered">About Me</h2>
         <div class="about-content">
           <div class="about-text">
-            <p>I’m a passionate Data Analyst & AI Engineer with experience building real-time and batch data solutions across Azure, AWS, Databricks, and Snowflake. I recently completed my MS in Data Science at the Stevens Institute of Technology, where I developed a strong foundation in analytics, applied machine learning, and data-driven problem solving.</p>
-            <p>My expertise centers on business-focused data analytics turning raw, complex data into insights that help organizations make better decisions. I specialize in exploratory analysis, KPI design, data modeling, and building decision-support dashboards, with applied AI used selectively to enhance analysis, automate insight generation, and improve efficiency. My work consistently delivers reliable, production-ready solutions that improve clarity, performance, and decision-making speed.</p>
+            <p>I'm a Data Engineer with experience designing end-to-end batch and real-time data pipelines, lakehouse architecture and analytics platforms across Azure, AWS, Databricksand Snowflake. Holding an MS in Data Science from the Stevens Institute of Technology, I specialize in transforming complex data into production-ready analytics using PySpark, SQL Apache Airflowand dbt.</p>
+            <p>My expertise centers on implementing Medallion Architecture, Star Schema data modeling with SCD type-2 tracking and automated data quality validation pipelines. Beyond core engineering, I bring hands-on experience building GenAI applications such as RAG-based archietecture with Azure OpenAI and developing client-faced dashboards in Tableau and PowerBI. My work consistently delivers high-performance data layers that reduce query fiction and accelerate business decision-making.</p>
             <h3 class="certifications-title">Certifications</h3>
+            <div class="certifications-pills">
+              <a class="cert-pill" href="https://learn.microsoft.com/en-us/users/adityareddysatti-0192/credentials/4fe29b4fc4220efa?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener">Microsoft Certified: Fabric Analytics Engineer Associate</a>
+            </div>
           </div>
           
           <div class="skills-categories">
             <div class="skill-category">
-              <h3>Programming & Querying</h3>
+              <h3>Programming</h3>
               <div class="skill-items">
-                <span class="skill-chip">Python (Pandas, Numpy)</span>
+                <span class="skill-chip">Python</span>
                 <span class="skill-chip">SQL</span>
-                <span class="skill-chip">R Studio</span>
-                <span class="skill-chip">Excel</span>
+                <span class="skill-chip">Pyspark</span>
               </div>
             </div>
 
             <div class="skill-category">
-              <h3>Data Analysis</h3>
+              <h3>Data Science & Analytics</h3>
               <div class="skill-items">
-                <span class="skill-chip">Exploratory Data Analysis (EDA)</span>
                 <span class="skill-chip">Statistical Analysis</span>
-                <span class="skill-chip">KPI Definition</span>
-                <span class="skill-chip">A/B Testing</span>
-                <span class="skill-chip">Data Quality & Validation</span>
-                <span class="skill-chip">Ad-hoc Analysis</span>
-                <span class="skill-chip">Business Metrics</span>
-                <span class="skill-chip">Data Modeling</span>
+                <span class="skill-chip">EDA</span>
+                <span class="skill-chip">Data Mining</span>
+                <span class="skill-chip">Predictive Modeling</span>
+                <span class="skill-chip">Regressions Analysis</span>
+                <span class="skill-chip">Feature Engineering</span>
+                <span class="skill-chip">KPI Analysis</span>
+                <span class="skill-chip">Business Intelligence</span>
               </div>
             </div>
 
             <div class="skill-category">
-              <h3>AI/ML Engineering</h3>
+              <h3>Machine learning & NLP</h3>
               <div class="skill-items">
-                <span class="skill-chip">OpenAI</span>
+                <span class="skill-chip">Scikit-Learn</span>
+                <span class="skill-chip">NLP</span>
                 <span class="skill-chip">RAG</span>
-                <span class="skill-chip">pgvector</span>
-                <span class="skill-chip">Vector Search</span>
-                <span class="skill-chip">NL-to-SQL</span>
+                <span class="skill-chip">Text Analysis</span>
+                <span class="skill-chip">LLM Applications</span>
                 <span class="skill-chip">Embeddings</span>
               </div>
             </div>
 
             <div class="skill-category">
-              <h3>Soft skills</h3>
+              <h3>Data Engineering</h3>
               <div class="skill-items">
-                <span class="skill-chip">Problem Solving</span>
-                <span class="skill-chip">Communication</span>
-                <span class="skill-chip">Analytical Storytelling</span>
-                <span class="skill-chip">Critical Thinking</span>
+                <span class="skill-chip">ETL/ELT</span>
+                <span class="skill-chip">Apache Airflow</span>
+                <span class="skill-chip">Azure Databricks</span>
+                <span class="skill-chip">Snowflake</span>
+                <span class="skill-chip">PostgreSQL</span>
+                <span class="skill-chip">SQL Server</span>
+                <span class="skill-chip">Delta Lake</span>
+                <span class="skill-chip">Data Warehousing</span>
               </div>
             </div>
 
             <div class="skill-category">
-              <h3>Cloud & Platforms</h3>
+              <h3>AI Platform & Tools</h3>
+              <div class="skill-items">
+                <span class="skill-chip">OpenAI API</span>
+                <span class="skill-chip">Anthropic Claude API</span>
+                <span class="skill-chip">LangChain</span>
+                <span class="skill-chip">pgvector</span>
+                <span class="skill-chip">Hugging Face</span>
+              </div>
+            </div>
+
+            
+
+            <div class="skill-category">
+              <h3>Backend & APIs</h3>
+              <div class="skill-items">
+                <span class="skill-chip">FastAPI</span>
+                <span class="skill-chip">Flask</span>
+                <span class="skill-chip">REST APIs</span>
+                <span class="skill-chip">Streamlit</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3>Cloud & Dev Tools</h3>
               <div class="skill-items">
                 <span class="skill-chip">Azure</span>
                 <span class="skill-chip">AWS</span>
-                <span class="skill-chip">Databricks</span>
-                <span class="skill-chip">Snowflake</span>
+                <span class="skill-chip">Docker</span>
                 <span class="skill-chip">Git</span>
               </div>
             </div>
 
             <div class="skill-category">
-              <h3>Analytics & Visualization</h3>
+              <h3>Visualization</h3>
               <div class="skill-items">
                 <span class="skill-chip">Power BI</span>
-                <span class="skill-chip">Metabase</span>
                 <span class="skill-chip">Tableau</span>
+                <span class="skill-chip">Matplotlib</span>
               </div>
             </div>
           </div>
@@ -1262,27 +229,20 @@
       </section>
 
       <section class="section" id="experience">
-        <h2 class="section__title">Professional Experience</h2>
+        <h2 class="section__title centered">Professional Experience</h2>
         <div class="timeline-vertical">
           <div class="timeline-row">
             <div class="marker"><div class="dot" aria-hidden="true"></div></div>
             <div class="card timeline__item">
-              <h3>Data Analyst</h3>
-              <a href="#" class="muted-link">The Hanover Insurance Group | Remote, USA</a>
-              <p class="timeline__meta">Aug 2024 — Present</p>
+              <h3>Data Engineer</h3>
+              <a href="#" class="muted-link">The Hanover Insurance Group | Piscataway, USA</a>
+              <p class="timeline__meta">Aug 2024 — Mar 2026</p>
               <ul>
-                <li>Analyzed large scale property and casualty (P&C) claim records using SQL to evaluate utilization patterns, processing
-                  timelines and outcome variability across claims lifecycle.</li>
-                <li>Built ETL pipelines using SQL server and Python to extract, transform and integrate multi-source P&C claims raw data
-                  into analytics-ready datasets.</li>
-                <li>Performed data quality checks to identify missing, inconsistent and outliers to reduce reporting risk and improve dataset
-                  reliability for downstream analytics.</li>
-                <li>Utilized Python to conduct exploratory data analysis(EDA) on claim lifecycle and backlog trends, uncovering patterns
-                  and key contributors to processing delays, supporting evidence-based process improvement initiatives</li>
-                <li>Designed and maintained PowerBI dashboards to present validated analytical results, enabling timely responses to ad-hoc
-                  requests, improving stakeholder decision-making by 30%.</li>
-                <li>Collaborated with Operational and claims teams to define metrics, validate assumptions and communicate result through
-                  clear visual and written summaries.</li>
+                <li>Enhanced existing Azure-based data pipelines and built PySpark ETL pipelines in Databricks Delta Lake (Azure) processing 6M+ P&C insurance records in Azure Data Lake Storage (ADLS) following the Medallion Architecture.</li>
+                <li>Optimized Spark SQL transformations to build star schema models with SCD type 2 implementation, improving analytical query performance by 20%.</li>
+                <li>Orchestrated daily ETL pipelines using Apache Airflow DAGs, integrated automated data quality validation in Databricks to quarantine faulty P&C records, reducing downstream reporting errors by 30%.</li>
+                <li>Integrated curated datasets into Azure Synapse, enabling reporting and supporting downstream analytics workloads.</li>
+                <li>Collaborated with data analysts to build self-serve data layers, reducing ad-hoc data requests by 25% and accelerating business reporting cycles.</li>
               </ul>
             </div>
           </div>
@@ -1290,14 +250,12 @@
           <div class="timeline-row">
             <div class="marker"><div class="dot" aria-hidden="true"></div></div>
             <div class="card timeline__item">
-              <h3>AI Engineer Intern</h3>
-              <a href="#" class="muted-link">Insights Gen | Jersey City, NJ</a>
-              <p class="timeline__meta">Mar 2024 — May 2024</p>
+              <h3>Data Engineer Intern</h3>
+              <a href="#" class="muted-link">Insights Gen | Jersey City, USA</a>
+              <p class="timeline__meta">Jan 2024 — May 2024</p>
               <ul>
-                <li>Built and deployed a RAG based LLM chatbot for AmikoXR using GPT-4o and Langchain with Azure CosmosDB,
-                  containerized in Docker and hosted on Azure Functions, enabling personalized, session aware learning experiences.</li>
-                <li>Led development of a responsive front-end with JavaScript, increasing engagement by 10%, and integrated REST APIs with
-                  Azure Functions for low-latency, production grade deployment.</li>
+                <li>Engineered a RAG-based AI application on Azure using Azure OpenAI, vector embeddings and persistent memory models to enable context-aware, multi-turn interactions.</li>
+                <li>Architectured a low-latency session persistence layer in Azure CosmosDB, containerized via Docker on Azure Functions to serialize, index and retrieve vectorized chat histories, cutting context fetch time by 30%.</li>
               </ul>
             </div>
           </div>
@@ -1305,7 +263,7 @@
           <div class="timeline-row">
             <div class="marker"><div class="dot" aria-hidden="true"></div></div>
             <div class="card timeline__item">
-              <h3>Data Analyst Intern</h3>
+              <h3>Data Analytics Engineer Intern</h3>
               <a href="#" class="muted-link">Bluebonnet Data | Minneapolis, MN</a>
               <p class="timeline__meta">Jan 2023 — May 2023</p>
               <ul>
@@ -1322,9 +280,9 @@
           <div class="timeline-row">
             <div class="marker"><div class="dot" aria-hidden="true"></div></div>
             <div class="card timeline__item">
-              <h3>Data Analyst</h3>
+              <h3>Data Analytics Engineer</h3>
               <a href="#" class="muted-link">Arachnomesh Technologies Pvt. | Hyderabad, India</a>
-              <p class="timeline__meta">May 2021 — Jul 2022</p>
+              <p class="timeline__meta">May 2021 — Jun 2022</p>
               <ul>
                 <li>Extracted and analyzed 2M+ sales and transaction data from Channelier’s B2B platform using SQL and Python to uncover
                 revenue trends, distributor performance and product-level demand across regions.</li>
@@ -1340,74 +298,87 @@
         </div>
       </section>
 
-        <section class="section" id="projects">
-          <h2 class="section__title">Featured Projects</h2>
-          <div class="grid grid--two">
+        <section class="section projects-section" id="projects">
+          <h2 class="section__title centered">Featured Projects</h2>
+          <div class="projects-grid">
             <article class="project-card">
-              <div class="project-card__body">
-                <h3>Sales-Insights Analytics</h3>
-                <p class="project-card__desc">Analyzed Sales data of Hardware store and provide insights that could help the sales director better understand the business perfromance.</p>
-                <span class="project-card__tools-label">Tools</span>
-                <div class="project-card__tags">
-                  <span class="skill-chip">EDA</span>
-                  <span class="skill-chip">Visualization</span>
-                  <span class="skill-chip">ANOVA</span>
-                  <span class="skill-chip">Hypothesis testing</span>
-                  <span class="skill-chip">Categorical Data Analysis</span>
-                </div>
-                <div class="project-card__links">
-                  <a class="btn btn--ghost" href="https://github.com/Aditya0241/Sales-Insights" target="_blank" rel="noopener noreferrer" aria-label="View Sales-Insights Analytics project on GitHub">
-                    View project <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
-                  </a>
-                  <a class="btn btn--ghost" href="https://public.tableau.com/app/profile/aditya.reddy2660/viz/Book1_17686903802440/Dashboard1?publish=yes" target="_blank" rel="noopener noreferrer" aria-label="View Tableau dashboard">
-                    Dashboard <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
-                  </a>
-                </div>
+              <div class="project-card__title-row">
+                <h3>Healthcare Data Pipeline</h3>
+              </div>
+              <p class="project-card__desc">Built an end-to-end healthcare data pipeline that validates, transforms, and tests patient, claims, and treatment data enabling reliable analytics for hospital operations and compliance reporting.</p>
+              <div class="project-highlights">
+                <span class="highlight-pill">Scheduled Airflow DAGs</span>
+                <span class="highlight-pill">SCD2 History Tracking</span>
+              </div>
+              <div class="project-tech">
+                <span class="tech-pill small">Python</span>
+                <span class="tech-pill small">Snowflake</span>
+                <span class="tech-pill small">dbt</span>
+                <span class="tech-pill small">Apache Airflow</span>
+                <span class="tech-pill small">Docker</span>
+                <span class="tech-pill small">Star Schema</span>
+              </div>
+              <div class="project-card__footer">
+                <a class="project-view-link" href="https://github.com/Aditya-Reddy-Satti/End-to-End-Snowflake-DBT-Airflow-Project">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
               </div>
             </article>
+
             <article class="project-card">
-              <div class="project-card__body">
-                <h3>Insurance fraud risk scoring</h3>
-                <p class="project-card__desc">Built an end-to-end insurance claims analytics solution to identify and prioritize potentially high-risk claims using statistical analysis and explainable scoring logic, and delivered the results through interactive BI dashboards</p>
-                <span class="project-card__tools-label">Tools</span>
-                <div class="project-card__tags">
-                  <span class="skill-chip">Python(Pandas, Numpy), MySQL,</span>
-                  <span class="skill-chip">Feature Engineering, Fraud risk scoring</span>
-                  <span class="skill-chip">Data Quality & Validation</span>
-                  <span class="skill-chip">Power BI</span>
-                </div>
-                <a class="btn btn--ghost" href="https://github.com/Aditya0241/Insurance-Fraud-Risk-Scoring.git" target="_blank" aria-label="View Demand Forecasting Suite project">
-                  View project <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
-                </a>
+              <div class="project-card__title-row">
+                <h3>Spotify ETL on AWS</h3>
+              </div>
+              <p class="project-card__desc">Built a serverless ETL pipeline on AWS and Snowflake that automatically extracts, transforms, and loads Spotify artist, album, and track data enabling near real-time music trend analytics in Power BI.</p>
+              <div class="project-highlights">
+                <span class="highlight-pill">Serverless Architecture</span>
+                <span class="highlight-pill">Real-time Analytics</span>
+              </div>
+              <div class="project-tech">
+                <span class="tech-pill small">Python</span>
+                <span class="tech-pill small">AWS</span>
+                <span class="tech-pill small">Snowflake</span>
+                <span class="tech-pill small">Data Warehousing</span>
+                <span class="tech-pill small">SQL</span>
+
+              </div>
+              <div class="project-card__footer">
+                <a class="project-view-link" href="https://github.com/Aditya-Reddy-Satti/Spotify_Data_Engineering_Project">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
               </div>
             </article>
+
             <article class="project-card">
-              <div class="project-card__body">
-                <h3>Youtube Data Analysis</h3>
-                <p class="project-card__desc">This project aims to securely manage, streamline, and perform analysis on the structured and semi-structured YouTube videos data based on the video categories and the trending metrics.</p>
-                <span class="project-card__tools-label">Tools</span>
-                <div class="project-card__tags">
-                  <span class="skill-chip">ETL Pipeline</span>
-                  <span class="skill-chip">AWS S3, AWS Glue, AWS Athena</span>
-                  <span class="skill-chip">Pandas, Pyspark, Visualization</span>
-                </div>
-                <a class="btn btn--ghost" href="https://github.com/Aditya0241/youtube-data-engineering-pipeline" target="_blank" aria-label="View Twitter(X) Research Agent project">
-                  View project <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
-                </a>
+              <div class="project-card__title-row">
+                <h3>Insurance Fraud Analytics</h3>
+              </div>
+              <p class="project-card__desc">An insurance fraud risk scoring project that cleans raw claims data, engineers risk indicators, and scores high-risk claims for investigation and reporting.</p>
+              <div class="project-highlights">
+                <span class="highlight-pill">Risk Scoring</span>
+                <span class="highlight-pill">Claim Intelligence</span>
+              </div>
+              <div class="project-tech">
+                <span class="tech-pill small">Pandas</span>
+                <span class="tech-pill small">Jupyter Notebook</span>
+                <span class="tech-pill small">PowerBI</span>
+                <span class="tech-pill small">Data Cleaning</span>
+                <span class="tech-pill small">Feature Engineering</span>
+              </div>
+              <div class="project-card__footer">
+                <a class="project-view-link" href="#">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
               </div>
             </article>
           </div>
         </section>
 
         <section class="section" id="education">
-        <h2 class="section__title">Education</h2>
+        <h2 class="section__title centered">Education</h2>
         <div class="education-cards">
           <article class="education-card">
             <div class="education-card__main">
-              <h3 class="education-card__degree">M.S. Data Science</h3>
-              <p class="education-card__meta">Stevens Institute of Technology • Hoboken, NJ</p>
-              <p class="education-card__coursework-label">Relevant Coursework:</p>
-              <p class="education-card__coursework">Optimization for Data Science • Probability • Machine learning • Deep learning • Web mining • Time series analysis • Marketing Analytics</p>
+              <h3 class="education-card__degree">Masters in Data Science</h3>
+              <p class="education-card__meta">Stevens Institute of Technology • New Jersey, USA</p>
+              <div class="education-coursework">
+                <p class="education-card__coursework-label">Relevant Coursework:</p>
+                <p class="education-card__coursework">Statistical Methods • Optimization for Data Science • Probability • Applied Machine learning • Deep learning • Web mining • Time series analysis • Marketing Analytics</p>
+              </div>
             </div>
             <div class="education-card__dates">
               <span>Sept 2022 – May 2024</span>
@@ -1418,8 +389,10 @@
             <div class="education-card__main">
               <h3 class="education-card__degree">B.Tech Computer Science</h3>
               <p class="education-card__meta">Vellore Institute of Technology • Vellore, India</p>
-              <p class="education-card__coursework-label">Relevant Coursework:</p>
-              <p class="education-card__coursework">Programming for Problem Solving • Probability and Statistics • Software systems • Statistical modeling</p>
+              <div class="education-coursework">
+                <p class="education-card__coursework-label">Relevant Coursework:</p>
+                <p class="education-card__coursework">Programming for Problem Solving • Data Structures and Algorithms • Probability and Statistics • Software Engineering • Information Security Management  </p>
+              </div>
             </div>
             <div class="education-card__dates">
               <span>July 2017 – May 2021</span>
@@ -1434,29 +407,49 @@
       
 
       <section class="section" id="contact">
-        <h2 class="section__title">Let’s build something</h2>
+        <h2 class="section__title centered">Let's Connect</h2>
         <p class="section__intro">
-          Open to full-time roles, advisory collaborations, and short-term analytics sprints. Drop a note and I’ll reply
+          Interested in discussing data science, AI, or engineer opportunities? Let's connect on how we can turn complex data into meaningful business impact.
           within 24 hours.
         </p>
-        <div class="contact-grid">
-          <div class="contact-card">
-            <p style="color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.3em">Email</p>
-            <a href="mailto:adityareddy1977@gmail.com" aria-label="Email: adityareddy1977@gmail.com">adityareddy1977@gmail.com</a>
-          </div>
-          <div class="contact-card">
-            <p style="color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.3em">Portfolio hub</p>
-            <a href="https://aditya0241.github.io/aditya.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Portfolio hub">aditya0241.github.io</a>
-          </div>
-          <div class="contact-card social">
-            <div style="width: 100%; text-align: center;">
-              <p style="color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.3em">Social Media</p>
-              <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1rem;">
-                <a href="https://www.linkedin.com/in/aditya-reddy-satti-3a191a28a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
-                  <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+        <div class="contact-wrapper">
+          <div class="contact-container">
+            <div class="contact-grid">
+              <div class="contact-left">
+                <div class="contact-item">
+                  <span class="contact-icon"><i class="fa-regular fa-envelope" aria-hidden="true"></i></span>
+                  <div class="contact-item__content">
+                    <p class="contact-label">Email</p>
+                    <a class="contact-value" href="mailto:reddyaditya159@gmail.com">reddyaditya159@gmail.com</a>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></span>
+                  <div class="contact-item__content">
+                    <p class="contact-label">Phone</p>
+                    <a class="contact-value" href="tel:+918106054109">+91 8106054109</a>
+                  </div>                  
+                </div>
+                <div class="contact-item">
+                  <span class="contact-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+                  <div class="contact-item__content">
+                    <p class="contact-label">Location</p>
+                    <p class="contact-value">Hyderabad, IN (Open to Relocation)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-right">
+                <a class="contact-link linkedin" href="https://www.linkedin.com/in/aditya-reddy-satti-3a191a28a/" target="_blank" rel="noopener noreferrer">
+                  <span class="contact-card-icon"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></span>
+                  <span class="contact-card-text">LinkedIn</span>
                 </a>
-                <a href="https://github.com/Aditya0241" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
-                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                <a class="contact-link github" href="https://github.com/Aditya-Reddy-Satti" target="_blank" rel="noopener noreferrer">
+                  <span class="contact-card-icon"><i class="fa-brands fa-github" aria-hidden="true"></i></span>
+                  <span class="contact-card-text">GitHub</span>
+                </a>
+                <a class="contact-link email" href="mailto:adityareddy1977@gmail.com">
+                  <span class="contact-card-icon"><i class="fa-regular fa-envelope" aria-hidden="true"></i></span>
+                  <span class="contact-card-text">Email</span>
                 </a>
               </div>
             </div>
@@ -1473,7 +466,7 @@
       © <span id="year"></span> Aditya Reddy Satti — Always learning, always shipping.
     </footer>
 
-    <script src="assets/js/script.js" defer></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
 
